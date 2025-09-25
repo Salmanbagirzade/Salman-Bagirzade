@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salman Bağırzadə</title>
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  color: #00ffcc;
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80") no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+
+/* Profil: yalnız hacker şəkli */
+.profile img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(230,255,249,0.9);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+/* Nav */
+nav.center a {
+  margin: 0 12px;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  font-weight: 700;
+  color: #00ffcc;
+  text-decoration: none;
+  transition: all .2s;
+}
+nav.center a:hover { background: rgba(255,255,255,0.06); transform: translateY(-3px); }
+
+/* Saat */
+.datetime {
+  background: rgba(0,0,0,0.45);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  backdrop-filter: blur(4px);
+}
+
+/* Main content */
+main {
+  position: relative;
+  z-index: 5;
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 120px 20px 80px;
+}
+
+.card {
+  width: 100%;
+  max-width: 820px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border-radius: 14px;
+  padding: 26px;
+  margin-bottom: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+h2 { font-size: 20px; margin-bottom: 10px; }
+.about p, .links p { margin-bottom: 8px; line-height: 1.5; font-size: 15px; }
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.02);
+  font-weight: 700;
+}
+.links a img { width: 22px; height: 22px; }
+
+.contact {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.38);
+  font-size: 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.site-name {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.45);
+  font-weight: 700;
+}
+</style>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<header>
+  <div class="profile">
+    <img src="https://i.imgur.com/3G4w5gA.png" alt="Hacker Profil">
+  </div>
+
+  <nav class="center">
+    <a href="#about">Haqqında</a>
+    <a href="#links">Linklər</a>
+    <a href="#contact">Əlaqə</a>
+  </nav>
+
+  <div class="datetime" id="datetime">--.--.---- | --:--:--</div>
+</header>
+
+<main>
+  <section id="about" class="card">
+    <h2>Haqqında</h2>
+    <div class="about">
+      <p><strong>Salam, mən Salman Bağırzadə</strong></p>
+      <p><strong>Təhsil:</strong> Azərbaycan Dövlət Pedaqoji Kolleci</p>
+      <p><strong>İxtisas:</strong> Kompüter Şəbəkə Avadanlıqlarının Təmiri Və Servisi</p>
+      <p><strong>Doğum tarixi:</strong> 2010.06.23</p>
+    </div>
+  </section>
+
+  <section id="links" class="card">
+    <h2>Linklər</h2>
+    <div class="links">
+      <a href="mailto:sbagirzad09@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt=""> Gmail: sbagirzad09@gmail.com</a>
+      <a href="https://instagram.com/salman_bagirzade" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt=""> Instagram: salman_bagirzade</a>
+      <a href="https://tiktok.com/@salmanbagirzade" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt=""> TikTok: @salmanbagirzade</a>
+      <a href="https://youtube.com/@salman_bagirzade" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt=""> YouTube: @salman_bagirzade</a>
+    </div>
+
+    <div id="contact" class="contact">
+      <strong>Əlaqə</strong>
+      <div>Gmail: sbagirzad09@gmail.com</div>
+      <div>Telefon: 051-410-23-08</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="site-name">Salman Bağırzadə — 2025</div>
+</footer>
+
+<script>
+function updateDateTime(){
+  const now = new Date();
+  const date = now.toLocaleDateString('az-AZ',{year:'numeric',month:'2-digit',day:'2-digit'});
+  const time = now.toLocaleTimeString('az-AZ',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  document.getElementById('datetime').textContent = date + ' | ' + time;
+}
+setInterval(updateDateTime,1000);
+updateDateTime();
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const tgt=document.querySelector(a.getAttribute('href'));
+    if(tgt){ e.preventDefault(); tgt.scrollIntoView({behavior:'smooth',block:'center'}); }
+  });
+});
+</script>
+
+</body>
+</html>
